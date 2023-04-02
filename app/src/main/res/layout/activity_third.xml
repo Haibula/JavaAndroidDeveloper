@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".ThirdActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="305dp"
+        android:layout_height="46dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="AppNameLogo"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/text_field_1"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="366dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="200dp"
+        android:autofillHints=""
+        android:backgroundTint="#282c31"
+        android:ems="10"
+        android:hint="@string/first_name"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#656060"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="TextFields,UnknownId" />
+
+    <EditText
+        android:id="@+id/text_field_2"
+        android:layout_width="366dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:autofillHints=""
+        android:backgroundTint="#282c31"
+        android:ems="10"
+        android:hint="@string/second_name"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#656060"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_field_1"
+        tools:ignore="DuplicateClickableBoundsCheck,TextFields,UnknownId" />
+
+    <Button
+        android:id="@+id/buttonConfirm"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="363dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="152dp"
+        android:backgroundTint="@color/nobel"
+        android:fontFamily="@font/alef_bold"
+        android:onClick="getPageFourthActivity"
+        android:text="CONFIRM"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_field_2"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imageAddButton"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="178dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="83dp"
+        android:backgroundTint="@color/balticsea"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/text_field_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        tools:ignore="SpeakableTextPresentCheck"
+
+        />
+
+    <ImageView
+        android:id="@+id/secondImageAddView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageAddButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageAddButton"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

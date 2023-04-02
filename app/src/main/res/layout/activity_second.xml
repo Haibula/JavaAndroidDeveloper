@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/secondViewText"
+        android:layout_width="305dp"
+        android:layout_height="46dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="AppNameLogo"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buttonMale"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="363dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="96dp"
+        android:backgroundTint="#282c31"
+        android:fontFamily="sans-serif-medium"
+        android:text="MALE"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondViewText" />
+
+    <Button
+        android:id="@+id/buttonFemaly"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="363dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#282c31"
+        android:fontFamily="sans-serif-medium"
+        android:text="FEMALY"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMale" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="363dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="236dp"
+        android:backgroundTint="#b3b3b3"
+        android:clickable="false"
+        android:fontFamily="@font/alef_bold"
+        android:onClick="getPageThirdActivity"
+        android:text="Next"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFemaly" />
+</androidx.constraintlayout.widget.ConstraintLayout>

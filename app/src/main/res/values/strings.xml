@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="button_text">Click on me</string>
+    <string name="person_text">Name</string>
+    <string name="first_name">FIRST NAME</string>
+    <string name="second_name">LAST NAME</string>
+    <string name="todo">TODO</string>
+    <string name="quote1">Единственное, что у нас действительно есть, – это сейчас, настоящий момент.
+        Согьял Ринпоче
+    </string>
+    <string name="quote2">У самурая нет цели, есть только путь.
+        Ии Наомаса
+    </string>
+    <string name="quote3">Друзей нельзя купить, зато их можно выгодно продать.
+        Николай Фоменко
+    </string>
+
+</resources>
